@@ -6,26 +6,26 @@
 
     while (1) {
     
-    char name[255];
+    char name[10];
 
     scanf("%s", name);
     
-    printf("%s", name);
+   
 
-     
+     //문자열 비교 함수 name이 #이면
     if (strcmp(name,"#") == 0) {
-        printf("0 0");
+        
         break;
         
     }
+    printf("%s ", name);
           
-
-        int a,b;   
+    int a,b;   
         
         scanf("%d %d",&a,&b);
 
 
-        if (a > 17 || b > 80) {
+        if (a > 17 || b >=80) {
             printf("Senior\n");
 
       }
@@ -33,8 +33,6 @@
         else { 
             printf("Junior\n");
         }
-
-
    
 
     }
